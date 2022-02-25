@@ -1,11 +1,25 @@
 
 
+
+
+// {{value: 'john', edges: ['kieran', 'jack']}, {value: 'kieran', edges: []}, {value: 'jack', edges: []}}
+
+// node = {value: 'john', edges: ['kieran', 'jack']}
+
+// {"john": {edges: []}, "kieran" : {edges: []}}
+
 // Instantiate a new graph
 var Graph = function() {
 };
 
 // Add a node to the graph, passing in the node's value.
 Graph.prototype.addNode = function(node) {
+  //Input - the node's value
+  //Output - a property with key of 'node' and a value of an object that contains an array
+  //constraints - ?
+  //edge cases - ?
+
+  //this[node] =
 };
 
 // Return a boolean value indicating if the value passed to contains is represented in the graph.
@@ -35,5 +49,7 @@ Graph.prototype.forEachNode = function(cb) {
 /*
  * Complexity: What is the time complexity of the above functions?
  */
+
+
 
 
