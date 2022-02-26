@@ -13,6 +13,7 @@ var Graph = function() {
 };
 
 // Add a node to the graph, passing in the node's value.
+// constant time
 Graph.prototype.addNode = function(node) {
   //Input - the node's value
   //Output - a property with key of 'node' and a value of an object that contains an array
@@ -32,6 +33,7 @@ Graph.prototype.addNode = function(node) {
 };
 
 // Return a boolean value indicating if the value passed to contains is represented in the graph.
+// linear time
 Graph.prototype.contains = function(node) {
   // iterate over the nodes array
   //   if the current element equals the paramter node
@@ -47,6 +49,7 @@ Graph.prototype.contains = function(node) {
 };
 
 // Removes a node from the graph.
+// quadratic
 Graph.prototype.removeNode = function(node) {
   // iterate over the nodes array
   //   if the value inside nodes array is the paramter node
@@ -71,6 +74,7 @@ Graph.prototype.removeNode = function(node) {
 
 
 // Returns a boolean indicating whether two specified nodes are connected.  Pass in the values contained in each of the two nodes.
+// quadratic time
 Graph.prototype.hasEdge = function(fromNode, toNode) {
   // iterate over the nodes array
   //   if the current node value equals the fromNode
@@ -91,6 +95,7 @@ Graph.prototype.hasEdge = function(fromNode, toNode) {
 };
 
 // Connects two nodes in a graph by adding an edge between them.
+// linear time
 Graph.prototype.addEdge = function(fromNode, toNode) {
   // iterate through the nodes array
   //   find fromNode
@@ -108,6 +113,7 @@ Graph.prototype.addEdge = function(fromNode, toNode) {
 };
 
 // Remove an edge between any two specified (by value) nodes.
+// linear time
 Graph.prototype.removeEdge = function(fromNode, toNode) {
   // iterate through the nodes array
   //   find fromNode
@@ -136,6 +142,7 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 // fromNode--toNode
 
 // Pass in a callback which will be executed on each node of the graph.
+// quadratic time
 Graph.prototype.forEachNode = function(cb) {
   // iterate over the nodes array
   //   use cb and pass the current node value as a parameter
